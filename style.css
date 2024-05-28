@@ -117,5 +117,51 @@ body {
     padding-bottom: 0.5rem;
 }
 
+.right-section > *{
+    padding: 1rem 2rem;
+
+}
+
+.right-section .header {
+    margin-top: 5rem;
+}
+
+.right-section  h2 {
+    margin-bottom: 1rem;
+}
+
+/* form */
 .form-section {
     box-shadow: 0 3px 6px lightgray;}
+
+button {
+    background-color: #596D48;
+    
+    color: white;
+    font-weight: bold;
+    
+    padding: 0.5rem 3rem;
+    margin: 1rem 0;
+
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 0 3px 6px lightgray;
+}
+
+button:hover {
+    background-color: white;    
+    color: #596D48;    
+}
+
+.bottom-section {
+    p {
+        margin-top: 1rem;
+    } 
+    
+    a {
+        color: #596D48;
+        text-decoration: none;
+        font-weight: bold;   
+    }    
+}
+
