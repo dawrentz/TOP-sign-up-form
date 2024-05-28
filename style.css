@@ -1,4 +1,4 @@
-/*==================Reset==================*/
+/* ==================Reset==================
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -47,39 +47,75 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
     isolation: isolate;
-}
+} 
 
 /*==================General Settings==================*/
 
-* {
-    outline: solid red 1px;
+@font-face {
+    font-family: "Norse Bold";
+    src: url(fonts/norse-bold-webfont.woff) format(woff);
 }
+
+
+/* for construction */
+* {
+    /* outline: solid red 1px; */
+    }
 
 body {
-    max-width: 100rem;
+    max-width: 80rem;
     margin: auto;
 
-    background-color: aqua;
+    background-color: white;
 
     display: flex;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
-
-
 .left-section {
+    color: rgb(255, 255, 255);
+    
     width: 55rem;
-    height: 55rem;
+    height: 100vh;
 
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center; 
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 10rem;
+    height: 7rem;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.414);
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Norse Bold";
+    font-size: 4rem;
+}
+
+.logo img {
+    height: 90%;
+}
+
+.left-section > p {
+    font-size: x-small;
+    font-weight: lighter;
+    color: lightgrey;
+
+    padding-bottom: 0.5rem;
 }
 
 .form-section {
-    background-color: azure;
-}
+    box-shadow: 0 3px 6px lightgray;}
