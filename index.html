@@ -27,41 +27,64 @@
         </div>
         
         <div class="form-section">
-            <form action="#" method="post" id="sign-up">
-                <h2>Let's do this!</h2>
+            <h2>Let's do this!</h2>
+            <!-- using "get" for testing -->
+            <form action="" method="get" id="sign-up"> 
 
                 <div class="form-left">
                     <div class="form-line">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <label for="first-name">FIRST NAME*</label>
+                        <input type="text" 
+                        name="first-name" 
+                        id="first-name" 
+                        placeholder="John"
+                        required>
                         <span></span>
                     </div>
                     <div class="form-line">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <label for="email">EMAIL*</label>
+                        <input type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="email@example.com"
+                        required>
                         <span></span>
                     </div>
                     <div class="form-line">
-                        <label for="password">PASSWORD</label>
-                        <input type="text" name="password" id="password">
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" 
+                        name="password" 
+                        id="password" 
+                        required>
                         <span></span>
                     </div>
                 </div>
 
                 <div class="form-right">
                     <div class="form-line">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <label for="last-name">LAST NAME*</label>
+                        <input type="text" 
+                        name="last-name" 
+                        id="last-name" 
+                        placeholder="Smith"
+                        required>
                         <span></span>
                     </div>
                     <div class="form-line">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" 
+                        name="phone" 
+                        id="phone"
+                        placeholder="123-123-1234" 
+                        pattern="(\d{3}-){2}\d{4}">
                         <span></span>
                     </div>
                     <div class="form-line">
-                        <label for="password-confirm">LAST NAME</label>
-                        <input type="text" name="password-confirm" id="password-confirm">
+                        <label for="password-confirm">CONFIRM PASSWORD*</label>
+                        <input type="password" 
+                        name="password-confirm" 
+                        id="password-confirm" 
+                        required>
                         <span></span>
                     </div>
                 </div>
