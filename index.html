@@ -11,9 +11,10 @@
         <!-- <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="A close up picture of green ferns ins a forest."> -->
         <div class="logo">
             <img src="images/odin-lined.png" alt="The ODIN logo: a minimalistic rendering of the norse god's face.">
+            <!-- may be better to just use span and not p -->
             <p>ODIN</p>
         </div>
-        <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noopener noreferrer">Halie West</a> on <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
     </div>
 
     <div class="right-section">
@@ -28,9 +29,10 @@
         
         <div class="form-section">
             <h2>Let's do this!</h2>
-            <!-- using "get" for testing -->
+            <!-- use "get" for testing -->
             <form action="" method="get" id="sign-up"> 
-
+                
+                <!-- using a "left and right" structure creates problems with using tab to navigate -->
                 <div class="form-left">
                     <div class="form-line">
                         <label for="first-name">FIRST NAME*</label>
@@ -39,6 +41,7 @@
                         id="first-name" 
                         placeholder="John"
                         required>
+                        <!-- including span's here for later projects -->
                         <span></span>
                     </div>
                     <div class="form-line">
